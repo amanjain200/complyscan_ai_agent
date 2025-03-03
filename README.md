@@ -12,13 +12,15 @@ Whether you're building for inclusivity or legal compliance, ComplyScan helps yo
 ⚠️ The web must be for everyone.
 Millions of users depend on assistive technologies like screen readers and keyboard navigation to browse the web. Websites that ignore accessibility:
 
-    Fail to meet legal standards (WCAG, ADA, Section 508).
-    Risk lawsuits and financial penalties.
+    Fail to meet standards (WCAG, ADA, Section 508).
     Exclude users with disabilities, impairing user experience.
     Lose potential traffic and customers.
+    Risk lawsuits and financial penalties.
+
 
 But manual audits are time-consuming and complex.
 That’s where ComplyScan steps in with automated scanning, AI analysis, and actionable feedback.
+
 ## 3️⃣ Key Features 🛠️
 
 ✅ Detects keyboard navigation issues.
@@ -29,7 +31,8 @@ That’s where ComplyScan steps in with automated scanning, AI analysis, and act
 ✅ Verifies the presence of Privacy Policies, Cookies consent, and feedback links.
 ✅ Generates an AI-powered detailed report with context, issue descriptions, and recommendations.
 ✅ Supports ongoing conversations with the LLM to get tailored fixes and best practices.
-4️⃣ Full Workflow 🔄
+
+## 4️⃣ Full Workflow 🔄
 
 Here's how ComplyScan operates end-to-end:
 
@@ -104,6 +107,10 @@ The repository is organized into two main folders:
     - `OPENAI_API_KEY`: Your OpenAI API key.
   
 3. The application uses Pydantic Settings for configuration management. You can adjust the configuration defaults in `fastapi_backend/app/config.py`, or set the configuration variables directly using environment variables.
+
+4. Install the chromedriver for your os from https://googlechromelabs.github.io/chrome-for-testing/ .
+It is necessary for selenium to work. After downloading change the "PATH" variable in the analyze_website() function in checks.py file in fastapi_backend directory. 
+You can follow the instructions from here as well (https://developer.chrome.com/docs/chromedriver/get-started).
 
 ### Frontend
 

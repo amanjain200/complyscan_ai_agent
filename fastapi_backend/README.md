@@ -12,7 +12,11 @@
   
 3. The application uses Pydantic Settings for configuration management. You can adjust the configuration defaults in `fastapi_backend/app/config.py`, or set the configuration variables directly using environment variables.
 
-4. Start the backend server in this way:
+4. Install the chromedriver for your os from https://googlechromelabs.github.io/chrome-for-testing/ .
+It is necessary for selenium to work. After downloading change the "PATH" variable in the analyze_website() function in checks.py file in fastapi_backend directory. 
+You can follow the instructions from here as well (https://developer.chrome.com/docs/chromedriver/get-started).
+
+5. Start the backend server in this way:
 
     ```bash
     cd fastapi_backend
